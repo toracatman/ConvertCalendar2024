@@ -50,10 +50,12 @@
 			<input type="text" name="hhpc" onchange="h2g()">
 		</p>
 	</form>
+	<p id="number"></p>
 	<div id="day"></div>
 	<div id="error" class="red"></div>
 	<script>
 		var e_leap = document.getElementById("leap");
+		var e_number = document.getElementById("number");
 		var e_day = document.getElementById("day");
 		var e_error = document.getElementById("error");
 
@@ -366,6 +368,7 @@
 				break;
 			}
 
+			e_number.innerHTML = "日の番号: " + n;
 			displayDay(gy, gm, gd);
 		}
 
@@ -446,6 +449,7 @@
 				break;
 			}
 
+			e_number.innerHTML = "日の番号: " + n;
 			displayDay(gy, gm, gd);
 		}
 
